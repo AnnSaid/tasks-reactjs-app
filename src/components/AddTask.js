@@ -23,7 +23,7 @@ const AddTask = ({ onAdd }) => {
   return (
     <form className="add-form" onSubmit={onSubmit}>
       <div className="form-control">
-        <label>Task Title</label>
+        <label>Title</label>
         <input
           type="text"
           placeholder="Task Title"
@@ -48,14 +48,18 @@ const AddTask = ({ onAdd }) => {
         />
       </div>
       <div className="form-control form-control-check">
-        <input
-          type="checkbox"
-          checked={reminder}
-          value={reminder}
-          onChange={(e) => setReminder(e.currentTarget.checked)}
-        ></input>
-        <label>Remind Me</label>
+        <label class="remind-me">
+          Remind me
+          <input
+            type="checkbox"
+            checked={reminder}
+            value={reminder}
+            onChange={(e) => setReminder(e.currentTarget.checked)}
+          />
+          <span class="checkmark"></span>
+        </label>
       </div>
+
       <input type="submit" value="Add Task" className="btn btn-block" />
     </form>
   );
