@@ -130,13 +130,13 @@ body {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .remind-me input {
