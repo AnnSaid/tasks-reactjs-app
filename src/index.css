@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,11 +7,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 50%;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -77,6 +77,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .task .task-time {
@@ -84,10 +85,11 @@ body {
 }
 .task .date-time {
   display: flex;
+  font-size: 14px;
 }
 .add-form {
   margin-bottom: 40px;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .form-control {
@@ -134,6 +136,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 1.5;
 }
 
 .remind-me input {
@@ -181,4 +184,9 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.icon {
+  color: #a1b0b7;
+  margin-right: 5px;
+  font-size: 14px;
 }
