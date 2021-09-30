@@ -1,4 +1,6 @@
 import { FaTimes } from "react-icons/fa";
+import { FaRegCalendar } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
 const Task = ({ task, onDelete, onToggle }) => {
   return (
     <div
@@ -13,8 +15,14 @@ const Task = ({ task, onDelete, onToggle }) => {
         />
       </p>
       <div class="date-time">
-        <p className="task-time">{task.day}</p>
-        <p className="task-clock">{task.time} am </p>
+        <p className="task-time">
+          <FaRegCalendar className="icon" />
+          {task.day}
+        </p>
+        <p className="task-clock">
+          <FaRegClock className="icon" />
+          {task.time} am{" "}
+        </p>
       </div>
     </div>
   );
