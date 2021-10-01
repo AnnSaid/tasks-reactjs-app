@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
+import checklist from "./img/checklist.svg";
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([
@@ -78,7 +79,10 @@ const App = () => {
             onToggle={toggleReminder}
           />
         ) : (
-          <p className="no-task-msg">No Tasks ... Start adding your tasks</p>
+          <div class="no-tasks">
+            <img src={checklist} alt="No Tasks" className="checklist-img" />
+            <p className="no-task-msg">No Tasks ... Start adding your tasks</p>
+          </div>
         )}
       </div>
     </div>
