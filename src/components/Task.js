@@ -1,4 +1,4 @@
-import { FaTimes } from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
 import { FaRegCalendar } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
 const Task = ({ task, onDelete, onToggle }) => {
@@ -9,7 +9,7 @@ const Task = ({ task, onDelete, onToggle }) => {
     >
       <p className="task-name">
         {task.text}{" "}
-        <FaTimes
+        <FaRegTrashAlt
           style={{ color: "red", cursor: "pointer" }}
           onClick={() => onDelete(task.id)}
         />
