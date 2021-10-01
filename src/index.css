@@ -8,18 +8,32 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(90deg, rgb(24 96 129), rgb(22 148 205));
+  overflow-y: scroll;
 }
-
 .container {
+  min-width: 50%;
   max-width: 50%;
+  width: 50%;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
   border: 1px solid #1694cd;
   padding: 30px;
   border-radius: 5px;
+  background-color: #fff;
 }
-
+.main {
+  padding: 50px 0;
+}
+.page-title {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +51,6 @@ body {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 5px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 15px;
@@ -66,6 +79,9 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   border-left: 5px solid #f4f4f4;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
 }
 
 .task.reminder {
@@ -89,9 +105,12 @@ body {
 }
 .add-form {
   margin-bottom: 40px;
-  max-width: 100%;
+  width: 100%;
 }
 
+.error-msg {
+  color: red;
+}
 .form-control {
   margin: 20px 0;
 }
@@ -110,8 +129,13 @@ body {
   font-size: 17px;
   border-radius: 3px;
   border: 1px solid #ddd;
+  color: #8e8e8e;
 }
-
+.form-control input[type="text"]:focus,
+.form-control input[type="date"]:focus,
+.form-control input[type="time"]:focus {
+  color: #050505;
+}
 .form-control input:focus {
   border: 1px solid #1694cd;
   outline: 0;
@@ -129,14 +153,13 @@ body {
 .remind-me {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 26px;
   margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 .remind-me input {
@@ -151,17 +174,20 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   background-color: #eee;
+  border-radius: 3px;
 }
 
 .remind-me:hover input ~ .checkmark {
   background-color: #ccc;
+  border-radius: 3px;
 }
 
 .remind-me input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #1694cd;
+  border-radius: 3px;
 }
 
 .checkmark:after {
@@ -175,8 +201,8 @@ body {
 }
 
 .remind-me .checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 6px;
+  top: 1px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -185,8 +211,18 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.optional {
+  font-size: 12px;
+  color: #748f9d;
+}
 .icon {
   color: #a1b0b7;
   margin-right: 5px;
   font-size: 14px;
+  margin-bottom: -2px;
+}
+.no-task-msg {
+  color: #8aa3af;
+  text-align: center;
+  margin-top: 20px;
 }
