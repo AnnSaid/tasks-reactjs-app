@@ -7,28 +7,28 @@ const App = () => {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "Task 1",
+      text: "Task1",
       day: "2021-08-31",
       time: "10:20",
       reminder: true,
     },
     {
       id: 2,
-      text: "Task 2",
+      text: "Task2",
       day: "2021-08-31",
       time: "10:20",
       reminder: false,
     },
     {
       id: 3,
-      text: "Task 3",
+      text: "Task3",
       day: "2021-08-31",
       time: "10:20",
       reminder: true,
     },
     {
       id: 4,
-      text: "Task 4",
+      text: "Task4",
       day: "2021-08-31",
       time: "10:20",
       reminder: true,
@@ -60,18 +60,27 @@ const App = () => {
     );
   };
   return (
-    <div className="container">
-      <Header
-        title="My Tasks"
-        onAddT={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask}
-      />
-      {showAddTask ? <AddTask onAdd={addTask} /> : ""}
-      {tasks.length > 0 ? (
-        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-      ) : (
-        "No Tasks ... Start adding your tasks"
-      )}
+    <div className="main">
+      <div className="top-intro">
+        <h1 className="page-title">Tasks App using ReactJS with Hooks</h1>
+      </div>
+      <div className="container">
+        <Header
+          title="My Tasks"
+          onAddT={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
+        />
+        {showAddTask && <AddTask onAdd={addTask} />}
+        {tasks.length > 0 ? (
+          <Tasks
+            tasks={tasks}
+            onDelete={deleteTask}
+            onToggle={toggleReminder}
+          />
+        ) : (
+          <p className="no-task-msg">No Tasks ... Start adding your tasks</p>
+        )}
+      </div>
     </div>
   );
 };
