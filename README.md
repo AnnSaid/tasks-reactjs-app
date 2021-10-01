@@ -9,4 +9,6 @@ You can:
 4. Change the reminder state
 
 ![TasksAppReact](https://raw.githubusercontent.com/AnnSaid/tasks-reactjs-app/main/AppScreens/screenshot1.PNG)
+![TasksAppReact2](https://github.com/AnnSaid/tasks-reactjs-app/blob/main/AppScreens/screenshot2.png)
+
 
