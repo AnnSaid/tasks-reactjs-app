@@ -2,26 +2,29 @@ import { useState } from "react";
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
-  const [day, setDay] = useState(new Date());
-  const [time, setTime] = useState(new Date());
+  const [day, setDay] = useState("");
+  const [time, setTime] = useState("");
   const [reminder, setReminder] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!text) {
-      alert("Pleas add task title");
+    if (!text || !day || !time) {
+      setErrorMsg("Please fill all task details");
       return;
     }
 
     onAdd({ text, day, time, reminder });
 
     setText("");
-    setDay(new Date());
-    setTime(new Date());
+    setDay("");
+    setTime("");
     setReminder(false);
+    setErrorMsg("");
   };
   return (
     <form className="add-form" onSubmit={onSubmit}>
+      <label className="error-msg">{errorMsg}</label>
       <div className="form-control">
         <label>Title</label>
         <input
@@ -49,7 +52,7 @@ const AddTask = ({ onAdd }) => {
       </div>
       <div className="form-control form-control-check">
         <label class="remind-me">
-          Remind me
+          Remind me <span className="optional">(optional)</span>
           <input
             type="checkbox"
             checked={reminder}
