@@ -8,5 +8,5 @@ You can:
 3. Delete task
 4. Change the reminder state
 
-![TasksAppReact](https://github.com/AnnSaid/tasks-reactjs-app/blob/main/AppScreens/screenshot1.PNG?raw=true
+![TasksAppReact](https://raw.githubusercontent.com/AnnSaid/tasks-reactjs-app/main/AppScreens/screenshot1.PNG)
 
