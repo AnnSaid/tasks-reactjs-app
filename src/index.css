@@ -221,8 +221,14 @@ body {
   font-size: 14px;
   margin-bottom: -2px;
 }
+.no-tasks {
+  text-align: center;
+}
 .no-task-msg {
   color: #8aa3af;
   text-align: center;
-  margin-top: 20px;
+}
+.checklist-img {
+  width: 100px;
+  height: 200px;
 }
