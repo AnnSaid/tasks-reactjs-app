@@ -4,9 +4,9 @@ import Button from "./Button";
 const Header = ({ title, onAddT, showAdd }) => {
   return (
     <header className="header">
-      <h1 className="h-title">{title}</h1>
+      <h2 className="h-title">{title}</h2>
       <Button
-        color={showAdd ? "#f44336" : "#1694cd"}
+        color={showAdd ? "rgb(116 143 157)" : "#1694cd"}
         text={showAdd ? "Cancel" : "Add Task"}
         onClick={onAddT}
       />
