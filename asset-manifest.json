@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tasks-reactjs-app/static/css/main.56f1cd3d.chunk.css",
+    "main.css": "/tasks-reactjs-app/static/css/main.fb5a0ee0.chunk.css",
     "main.js": "/tasks-reactjs-app/static/js/main.0e60994a.chunk.js",
     "main.js.map": "/tasks-reactjs-app/static/js/main.0e60994a.chunk.js.map",
     "runtime-main.js": "/tasks-reactjs-app/static/js/runtime-main.de865a55.js",
@@ -10,13 +10,13 @@
     "static/js/3.681309e5.chunk.js": "/tasks-reactjs-app/static/js/3.681309e5.chunk.js",
     "static/js/3.681309e5.chunk.js.map": "/tasks-reactjs-app/static/js/3.681309e5.chunk.js.map",
     "index.html": "/tasks-reactjs-app/index.html",
-    "static/css/main.56f1cd3d.chunk.css.map": "/tasks-reactjs-app/static/css/main.56f1cd3d.chunk.css.map",
+    "static/css/main.fb5a0ee0.chunk.css.map": "/tasks-reactjs-app/static/css/main.fb5a0ee0.chunk.css.map",
     "static/js/2.f20ef4ea.chunk.js.LICENSE.txt": "/tasks-reactjs-app/static/js/2.f20ef4ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de865a55.js",
     "static/js/2.f20ef4ea.chunk.js",
-    "static/css/main.56f1cd3d.chunk.css",
+    "static/css/main.fb5a0ee0.chunk.css",
     "static/js/main.0e60994a.chunk.js"
   ]
 }
